@@ -6,6 +6,6 @@ Tech Use:
 - HTML5
 - CSS3
 
-Minus : Not Responsive Design
+Minus : Not Responsive Design (Fix Soon)
 
 Live Demo : https://adisetiawanx.github.io/gacoan1
