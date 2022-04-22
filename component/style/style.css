@@ -133,7 +133,7 @@ header .navbar-right ul li {
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.247);
     border-radius: 20px;
     overflow: hidden;
-    height: 600px;
+    padding-bottom: 20px;
     width: 100%;
 }
 
@@ -241,6 +241,7 @@ footer {
     }
     .card {
         margin: 20px 30px;
+        height: 600px;
     }
     .gallery {
         padding: 30px;
