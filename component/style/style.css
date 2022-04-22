@@ -23,7 +23,7 @@ h3, h2, h4, h1 {
 
 button {
     margin: 15px 0;
-    width: 20%;
+    width: 100%;
     height: 40px;
     border-radius: 15px;
     border: 2px solid #0a63b4;
@@ -38,9 +38,13 @@ a {
 }
 
 .container{
-    width: 60%;
+    width: 95%;
     margin: 200px auto;
     box-sizing: border-box;
+}
+
+.container.hero{
+    margin: 20px auto;
 }
 
 
@@ -54,22 +58,23 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 13px;
-    position: fixed;
+    position: static;
     left: 0;
     right: 0;
     top: 0;
     z-index: 999;
     background-color: #252525;
+    flex-wrap: wrap;
 }
 
 header .navbar-left{
-    width: 40%;
+    width: 100%;
     display: flex;
     justify-content: center; 
 }
 
 header .navbar-right {
-    width: 60%;
+    width: 100%;
     margin: 10px 0;
 }
 
@@ -87,11 +92,16 @@ header .navbar-right ul li {
 
 .hero {
     display: flex;
-    padding: 10px 50px;
+    padding: 10px 10px;
+    flex-direction: column;
+}
+
+.hero  h3{
+    text-align: center;
 }
 
 .hero .hero-left {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-right: 50px;
@@ -105,20 +115,21 @@ header .navbar-right ul li {
 }
 
 .hero .hero-right {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .skills {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .card {
-    margin: 20px 30px;
+    margin: 30px 50px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.247);
     border-radius: 20px;
     overflow: hidden;
@@ -138,9 +149,10 @@ header .navbar-right ul li {
 
 .gallery {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 5px;
+    margin: 0 10px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.247);
 }
 
@@ -152,11 +164,12 @@ header .navbar-right ul li {
 aside .contact {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 aside .contact .contact-left {
-    width: 40%;
-    margin: 0 20px;
+    width: 100%;
+    margin: 35px 20px;
     padding: 20px 30px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.247);
     border-radius: 10px;
@@ -171,7 +184,7 @@ aside .contact .contact-left ul li {
 }
 
 aside .contact .contact-right {
-    width: 60%;
+    width: 100%;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.247);
     margin: 0 20px;
     padding: 20px 30px;
@@ -200,5 +213,53 @@ footer {
     font-size: 13px;
     padding: 10px 50px;
     margin-top: 50px;
+    flex-wrap: wrap;
 
+}
+
+@media (min-width: 900px) {
+    .container{
+        width: 60%;
+        margin: 200px auto;
+    }
+    .container.hero{
+        margin: 200px auto;
+    }
+    .hero {
+        padding: 10px 50px;
+        flex-direction: row;
+    }
+    .hero  h3{
+        text-align: left;
+    }
+    header{
+        flex-wrap: nowrap;
+        position: fixed;
+    }
+    .skills {
+        flex-wrap: nowrap;
+    }
+    .card {
+        margin: 20px 30px;
+    }
+    .gallery {
+        padding: 30px;
+        justify-content: space-between;
+    }
+    aside .contact {
+        flex-wrap: nowrap;
+    }
+    aside .contact .contact-left {
+        margin: 0 20px;
+        width: 40%;
+    }
+    aside .contact .contact-right {
+        width: 60%;
+    }
+    button {
+        width: 20%;
+    }
+    footer {
+        flex-wrap: nowrap;
+    }
 }
