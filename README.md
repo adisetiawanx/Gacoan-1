@@ -1,9 +1,9 @@
 # gacoan1 : Biodata Page
 
-Website created to take part in the gacoan challenge from UKM Progress Stikom Bali
+Website ini dibuat untuk latihan pada UKM Progress di kampus saya
 
-Tech Use:
+Teknologi yang digunkaan:
 - HTML5 : Using semantic html tags
-- CSS3 : Using flexbox and responsive design
+- Vanila CSS3 : Using flexbox and responsive design
 
 Live Demo : https://adisetiawanx.github.io/gacoan1
